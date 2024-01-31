@@ -919,8 +919,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d54c8d5667848dcaa152f0bd4f0abae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nameText: {fileID: 7363374233675174497}
+  _ageText: {fileID: 0}
   _traitsText: {fileID: 8193025313556074992}
-  <Traits>k__BackingField: []
 --- !u!1 &9056953859181953616
 GameObject:
   m_ObjectHideFlags: 0

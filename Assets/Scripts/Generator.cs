@@ -12,6 +12,8 @@ public class Generator : MonoBehaviour
     [SerializeField] GameObject PNJ_Group;
     [SerializeField] Character card_PNJ;
 
+    [SerializeField] NameGenerator _nameGenerator;
+
     [ContextMenu("Generate")]
     public void Generate()
     {
@@ -32,8 +34,11 @@ public class Generator : MonoBehaviour
                 traits.Add(cat.Traits.GetRandom());
             }
 
+            character.Sexe = Random.Range(0, 2);
+            character.Name = _nameGenerator.Generate(character.Sexe);
+            character.Age = Random.Range(17, 75);
             character.Traits = traits;
-            character.UpdateTraits();
+            character.UpdateCharacter();
         }
     }
 }
