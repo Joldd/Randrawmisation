@@ -1219,6 +1219,18 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 552e387f8d306f041ad5ebb96635c6f9, type: 3}
   - {fileID: 21300000, guid: 11e0a71218b289e4c956a95062950678, type: 3}
   - {fileID: 21300000, guid: 69517541ad49e164faa1ffc05e9d045d, type: 3}
+  _faceIcons:
+  - {fileID: 21300000, guid: aae4f9acb1ec2324f9e53aff8d2e8b3c, type: 3}
+  - {fileID: 21300000, guid: 8dc777214a9146148a188f71b140c30a, type: 3}
+  _hatIcons:
+  - {fileID: 21300000, guid: 297baef3ec873124a9ad119e525b178e, type: 3}
+  - {fileID: 21300000, guid: 0609628921701964e87e1d977979829d, type: 3}
+  - {fileID: 21300000, guid: 03d287f281a18194ebae79b17610996a, type: 3}
+  - {fileID: 21300000, guid: 102f48346a1fb154799944b948c8a872, type: 3}
+  _clothesIcons:
+  - {fileID: 21300000, guid: 8c45705cb73d124418c7690fd5f4517e, type: 3}
+  - {fileID: 21300000, guid: 6763cf39f35198248b011bd9236336c1, type: 3}
+  - {fileID: 21300000, guid: c4e8aa8aef10c00458587c481c99dd99, type: 3}
 --- !u!1 &8289441429357569219
 GameObject:
   m_ObjectHideFlags: 0

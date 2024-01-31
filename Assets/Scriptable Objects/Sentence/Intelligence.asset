@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Intelligence
   m_EditorClassIdentifier: 
   <Type>k__BackingField: {fileID: 11400000, guid: fa77577f706e8914c87e939d4cc7cd90, type: 2}
-  <Content>k__BackingField: "Je suis pas tr\xE8s malin"
+  <Content>k__BackingField: Je suis ;
   <Value>k__BackingField: 0.5

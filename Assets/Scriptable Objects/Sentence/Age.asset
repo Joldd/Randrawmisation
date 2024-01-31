@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Age
   m_EditorClassIdentifier: 
   <Type>k__BackingField: {fileID: 11400000, guid: 935add91ff3363b468dc611e5b9149b4, type: 2}
-  <Content>k__BackingField: J'ai 42ans
+  <Content>k__BackingField: Je suis ;
   <Value>k__BackingField: 0.5

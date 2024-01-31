@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: "Personalit\xE9"
   m_EditorClassIdentifier: 
   <Type>k__BackingField: {fileID: 11400000, guid: a4a89e47f8c27394c890609c6dd514be, type: 2}
-  <Content>k__BackingField: Je suis fou
+  <Content>k__BackingField: Je suis ;
   <Value>k__BackingField: 0.5

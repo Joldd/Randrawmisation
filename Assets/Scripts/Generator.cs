@@ -53,19 +53,22 @@ public class Generator : MonoBehaviour
                 categoriesClone.Remove(cat);
                 var trait = cat.Traits.GetRandom();
                 traits.Add(trait);
+
                 var sentence = cat.Sentences.GetRandom();
                 sentences.Add(sentence);
             }
 
             character.Sexe = Random.Range(0, 2);
             character.Name = _nameGenerator.Generate(character.Sexe);
-            character.Icon = _iconGenerator.Generate(character.Sexe);
+
+            character.IconFace = _iconGenerator.GenerateIcon(_iconGenerator._faceIcons);
+            character.IconClothes = _iconGenerator.GenerateIcon(_iconGenerator._clothesIcons);
+            character.IconHat = _iconGenerator.GenerateIcon(_iconGenerator._hatIcons);
+
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
-            character.UpdateCharacter();
-
             character.Sentences = sentences;
-            character.UpdateResume();
+            character.UpdateCharacter(); 
         }
 
         return seed;
