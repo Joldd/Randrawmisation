@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class Generator : MonoBehaviour
 {
@@ -12,11 +16,24 @@ public class Generator : MonoBehaviour
     [SerializeField] Character _cardPrefab;
 
     [SerializeField] Transform _cardContainer;
+    [SerializeField] TextMeshProUGUI _seedText;
+    [SerializeField] TMP_InputField _seedInput;
     [SerializeField] NameGenerator _nameGenerator;
     [SerializeField] IconGenerator _iconGenerator;
 
     public void Generate()
     {
+        var seed = Generate(!string.IsNullOrWhiteSpace(_seedInput.text) ? int.Parse(_seedInput.text) : -1);
+        _seedText.text = $"Seed : {seed}";
+    }
+    
+    public int Generate(int seed)
+    {
+        if (seed == -1)
+            seed = Math.Abs(Environment.TickCount);
+        
+        Random.InitState(seed);
+        
         Clear();
         
         for (var i = 0; i < PNJ_COUNT; i++)
@@ -50,6 +67,8 @@ public class Generator : MonoBehaviour
             character.Sentences = sentences;
             character.UpdateResume();
         }
+
+        return seed;
     }
 
     void Clear()
