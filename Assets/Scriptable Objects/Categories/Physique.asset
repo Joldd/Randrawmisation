@@ -18,3 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12cb0a22c3801f24d992f442469b7de1, type: 2}
   - {fileID: 11400000, guid: 9ab0717e31cc401478a6631e5cc9be4e, type: 2}
   - {fileID: 11400000, guid: 435905eff2338344ebe30ff118e4e2f7, type: 2}
+  <Sentences>k__BackingField:
+  - {fileID: 11400000, guid: beb57d68c14605749bd2a4f9a56d09d0, type: 2}

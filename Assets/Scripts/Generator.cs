@@ -25,7 +25,8 @@ public class Generator : MonoBehaviour
             
             var categoriesClone = new List<Categorie>(_categories);
             var traits = new List<Trait>();
-        
+            var sentences = new List<Sentence>();
+
             for (var j = 0; j < TRAIT_COUNT; j++)
             {
                 if (categoriesClone.Count == 0)
@@ -33,7 +34,10 @@ public class Generator : MonoBehaviour
             
                 var cat = categoriesClone.GetRandom();
                 categoriesClone.Remove(cat);
-                traits.Add(cat.Traits.GetRandom());
+                var trait = cat.Traits.GetRandom();
+                traits.Add(trait);
+                var sentence = cat.Sentences.GetRandom();
+                sentences.Add(sentence);
             }
 
             character.Sexe = Random.Range(0, 2);
@@ -42,6 +46,9 @@ public class Generator : MonoBehaviour
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
             character.UpdateCharacter();
+
+            character.Sentences = sentences;
+            character.UpdateResume();
         }
     }
 

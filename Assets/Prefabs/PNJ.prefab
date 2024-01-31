@@ -922,6 +922,7 @@ MonoBehaviour:
   _nameText: {fileID: 7363374233675174497}
   _iconImage: {fileID: 2467391022575925117}
   _traitsText: {fileID: 8193025313556074992}
+  _resumeText: {fileID: 8032415130390614127}
 --- !u!1 &9056953859181953616
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,12 +13,20 @@ public class Character : MonoBehaviour
     public Sprite Icon { get; set; }
     public int Age { get; set; }
     public int Sexe { get; set; }
+    [SerializeField] TextMeshProUGUI _resumeText;
+
     public List<Trait> Traits { get; set; }
+    public List<Sentence> Sentences { get; set; }
 
     public void UpdateCharacter()
     {
         _nameText.text = $"{Name} ({Age})";
         _iconImage.sprite = Icon;
         _traitsText.text = $"{Traits[0].Name} - {Traits[1].Name} - {Traits[2].Name}";
+    }
+
+    public void UpdateResume()
+    {
+        _resumeText.text = $"{Sentences[0].Content}. {Sentences[1].Content}. {Sentences[2].Content}";
     }
 }
