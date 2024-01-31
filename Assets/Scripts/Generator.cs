@@ -9,17 +9,18 @@ public class Generator : MonoBehaviour
 
     [SerializeField] List<Categorie> _categories;
 
-    [SerializeField] GameObject PNJ_Group;
-    [SerializeField] Character card_PNJ;
+    [SerializeField] Character _cardPrefab;
 
+    [SerializeField] Transform _cardContainer;
     [SerializeField] NameGenerator _nameGenerator;
 
-    [ContextMenu("Generate")]
     public void Generate()
     {
+        Clear();
+        
         for (var i = 0; i < PNJ_COUNT; i++)
         {
-            var character = Instantiate(card_PNJ, PNJ_Group.transform);
+            var character = Instantiate(_cardPrefab, _cardContainer);
             
             var categoriesClone = new List<Categorie>(_categories);
             var traits = new List<Trait>();
@@ -40,5 +41,11 @@ public class Generator : MonoBehaviour
             character.Traits = traits;
             character.UpdateCharacter();
         }
+    }
+
+    void Clear()
+    {
+        foreach (Transform child in _cardContainer)
+            Destroy(child.gameObject);
     }
 }

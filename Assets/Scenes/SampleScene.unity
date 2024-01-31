@@ -734,8 +734,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 100cb39993c7be0409e501f4cbc48fcf, type: 2}
   - {fileID: 11400000, guid: a4a89e47f8c27394c890609c6dd514be, type: 2}
   - {fileID: 11400000, guid: 3ba93e83f776f7e41bf399e9f8f3c5ec, type: 2}
-  PNJ_Group: {fileID: 1354750083}
-  card_PNJ: {fileID: 3817974053820162163, guid: a8af58c9fb1f0044e81883dbfb8a60bb, type: 3}
+  _cardPrefab: {fileID: 3817974053820162163, guid: a8af58c9fb1f0044e81883dbfb8a60bb, type: 3}
+  _cardContainer: {fileID: 1354750084}
   _nameGenerator: {fileID: 1870251398}
 --- !u!114 &1870251398
 MonoBehaviour:
