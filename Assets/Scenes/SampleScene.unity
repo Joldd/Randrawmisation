@@ -726,9 +726,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e79727388d40c788efe9baf771fb90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _categories: []
-  card_PNJ: {fileID: 8951125383533923715, guid: a8af58c9fb1f0044e81883dbfb8a60bb, type: 3}
+  _categories:
+  - {fileID: 11400000, guid: 935add91ff3363b468dc611e5b9149b4, type: 2}
+  - {fileID: 11400000, guid: 44d37e8b075db7b46969834b90617eb7, type: 2}
+  - {fileID: 11400000, guid: fa77577f706e8914c87e939d4cc7cd90, type: 2}
+  - {fileID: 11400000, guid: 100cb39993c7be0409e501f4cbc48fcf, type: 2}
+  - {fileID: 11400000, guid: a4a89e47f8c27394c890609c6dd514be, type: 2}
+  - {fileID: 11400000, guid: 3ba93e83f776f7e41bf399e9f8f3c5ec, type: 2}
   PNJ_Group: {fileID: 1354750083}
+  card_PNJ: {fileID: 3817974053820162163, guid: a8af58c9fb1f0044e81883dbfb8a60bb, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
@@ -10,31 +9,31 @@ public class Generator : MonoBehaviour
 
     [SerializeField] List<Categorie> _categories;
 
-    [SerializeField] GameObject card_PNJ;
-
     [SerializeField] GameObject PNJ_Group;
+    [SerializeField] Character card_PNJ;
 
     [ContextMenu("Generate")]
     public void Generate()
     {
         for (var i = 0; i < PNJ_COUNT; i++)
         {
-            Instantiate(card_PNJ, PNJ_Group.transform);
-        }
-
-        var categoriesClone = new List<Categorie>(_categories);
-        var traits = new List<Trait>();
-        
-        for (var i = 0; i < TRAIT_COUNT; i++)
-        {
-            if (categoriesClone.Count == 0)
-                break;
+            var character = Instantiate(card_PNJ, PNJ_Group.transform);
             
-            var cat = categoriesClone.GetRandom();
-            categoriesClone.Remove(cat);
-            traits.Add(cat.Traits.GetRandom());
-        }
+            var categoriesClone = new List<Categorie>(_categories);
+            var traits = new List<Trait>();
+        
+            for (var j = 0; j < TRAIT_COUNT; j++)
+            {
+                if (categoriesClone.Count == 0)
+                    break;
+            
+                var cat = categoriesClone.GetRandom();
+                categoriesClone.Remove(cat);
+                traits.Add(cat.Traits.GetRandom());
+            }
 
-        Debug.Log(traits.ToDisplayString());
+            character.Traits = traits;
+            character.UpdateTraits();
+        }
     }
 }
