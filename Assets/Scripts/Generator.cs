@@ -64,6 +64,7 @@ public class Generator : MonoBehaviour
             character.IconFace = _iconGenerator.GenerateIcon(_iconGenerator._faceIcons);
             character.IconClothes = _iconGenerator.GenerateIcon(_iconGenerator._clothesIcons);
             character.IconHat = _iconGenerator.GenerateIcon(_iconGenerator._hatIcons);
+            character.IconBeard = _iconGenerator.GenerateIcon(_iconGenerator._beardIcons);
 
             character.Age = Random.Range(17, 75);
             character.Traits = traits;

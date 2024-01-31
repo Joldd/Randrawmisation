@@ -9,6 +9,7 @@ public class IconGenerator : MonoBehaviour
     public List<Sprite> _faceIcons;
     public List<Sprite> _hatIcons;
     public List<Sprite> _clothesIcons;
+    public List<Sprite> _beardIcons;
 
     public Sprite Generate(int sexe)
     {

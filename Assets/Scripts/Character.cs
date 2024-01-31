@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     [SerializeField] Image _faceImage;
     [SerializeField] Image _hatImage;
     [SerializeField] Image _clothesImage;
+    [SerializeField] Image _beardImage;
 
     [SerializeField] TextMeshProUGUI _traitsText;
     
@@ -17,6 +18,7 @@ public class Character : MonoBehaviour
     public Sprite IconFace { get; set; }
     public Sprite IconHat { get; set; }
     public Sprite IconClothes { get; set; }
+    public Sprite IconBeard { get; set; }
     public int Age { get; set; }
     public int Sexe { get; set; }
     [SerializeField] TextMeshProUGUI _resumeText;
@@ -27,10 +29,22 @@ public class Character : MonoBehaviour
     public void UpdateCharacter()
     {
         _nameText.text = $"{Name} ({Age})";
-        _faceImage.sprite = IconFace;
-        _hatImage.sprite = IconHat;
-        _clothesImage.sprite = IconClothes;
+
+        updateImage(_faceImage, IconFace);
+        updateImage(_clothesImage, IconClothes);
+        updateImage(_hatImage, IconHat);
+        updateImage(_beardImage, IconBeard);
+
         _traitsText.text = $"{Traits[0].Name} - {Traits[1].Name} - {Traits[2].Name}";
         _resumeText.text = $"{Sentences[0].Content}. {Sentences[1].Content}. {Sentences[2].Content}";
+    }
+
+    private void updateImage(Image img, Sprite icon)
+    {
+        img.sprite = icon;
+        if (img.sprite == null)
+        {
+            img.color = new Color(0, 0, 0, 0);
+        }
     }
 }
