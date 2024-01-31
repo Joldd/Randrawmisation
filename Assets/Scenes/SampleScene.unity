@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 1870251394}
   - component: {fileID: 1870251397}
   - component: {fileID: 1870251398}
+  - component: {fileID: 1870251399}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -737,6 +738,7 @@ MonoBehaviour:
   _cardPrefab: {fileID: 3817974053820162163, guid: a8af58c9fb1f0044e81883dbfb8a60bb, type: 3}
   _cardContainer: {fileID: 1354750084}
   _nameGenerator: {fileID: 1870251398}
+  _iconGenerator: {fileID: 1870251399}
 --- !u!114 &1870251398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +751,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91486595f3df4d388eb72114fcf00f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1870251399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870251392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d4552526814806bffdf3fe2d142081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maleIcons:
+  - {fileID: 21300000, guid: 1e1566e932d96644cb6c389511f83a08, type: 3}
+  - {fileID: 21300000, guid: e4ad5909f22ec8740987aedf35020f75, type: 3}
+  - {fileID: 21300000, guid: 0c8b36ce5867cd049a5ad8dba5078321, type: 3}
+  _femaleIcons:
+  - {fileID: 21300000, guid: 552e387f8d306f041ad5ebb96635c6f9, type: 3}
+  - {fileID: 21300000, guid: 11e0a71218b289e4c956a95062950678, type: 3}
+  - {fileID: 21300000, guid: 69517541ad49e164faa1ffc05e9d045d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

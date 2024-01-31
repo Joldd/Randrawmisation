@@ -13,6 +13,7 @@ public class Generator : MonoBehaviour
 
     [SerializeField] Transform _cardContainer;
     [SerializeField] NameGenerator _nameGenerator;
+    [SerializeField] IconGenerator _iconGenerator;
 
     public void Generate()
     {
@@ -37,6 +38,7 @@ public class Generator : MonoBehaviour
 
             character.Sexe = Random.Range(0, 2);
             character.Name = _nameGenerator.Generate(character.Sexe);
+            character.Icon = _iconGenerator.Generate(character.Sexe);
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
             character.UpdateCharacter();
