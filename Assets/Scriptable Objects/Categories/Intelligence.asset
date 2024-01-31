@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2223bd9f8045baa294f7de239bc5cf, type: 3}
   m_Name: Intelligence
   m_EditorClassIdentifier: 
-  <Traits>k__BackingField: []
+  <Traits>k__BackingField:
+  - {fileID: 11400000, guid: 4bbac6345c25ecf49852de293aa8e367, type: 2}
+  - {fileID: 11400000, guid: 32abc0722c3364448afd4a0ffc7f915c, type: 2}
+  - {fileID: 11400000, guid: ec6761eb4ee54aa468cd474bc340d0ee, type: 2}
+  - {fileID: 11400000, guid: 37a314223f97f044282db84477573dc5, type: 2}
+  - {fileID: 11400000, guid: f775790fd86cb4844b337f427fdbf8d1, type: 2}

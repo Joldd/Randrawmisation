@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2223bd9f8045baa294f7de239bc5cf, type: 3}
   m_Name: Metier
   m_EditorClassIdentifier: 
-  <Traits>k__BackingField: []
+  <Traits>k__BackingField:
+  - {fileID: 11400000, guid: 4c51b823b94ec5245bd6e9e004757c0f, type: 2}
+  - {fileID: 11400000, guid: 22d3ee1977566264282cd386c84f5fb3, type: 2}
+  - {fileID: 11400000, guid: 4f9d2e827268d0b489cabbb4cbdd7587, type: 2}
+  - {fileID: 11400000, guid: 985e3c51a62e0b7468bb1c103ebcfb68, type: 2}
+  - {fileID: 11400000, guid: f66dcbbf06d9fb44594bb55640cc47ee, type: 2}

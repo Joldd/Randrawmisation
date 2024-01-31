@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c2223bd9f8045baa294f7de239bc5cf, type: 3}
   m_Name: Physique
   m_EditorClassIdentifier: 
-  <Traits>k__BackingField: []
+  <Traits>k__BackingField:
+  - {fileID: 11400000, guid: 95228da8b64467040a72fad3217d7594, type: 2}
+  - {fileID: 11400000, guid: fbfe2563d3d885c47b9306ab9c4eca56, type: 2}
+  - {fileID: 11400000, guid: 12cb0a22c3801f24d992f442469b7de1, type: 2}
+  - {fileID: 11400000, guid: 9ab0717e31cc401478a6631e5cc9be4e, type: 2}
+  - {fileID: 11400000, guid: 435905eff2338344ebe30ff118e4e2f7, type: 2}
