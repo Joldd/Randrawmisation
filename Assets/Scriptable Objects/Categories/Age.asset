@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2223bd9f8045baa294f7de239bc5cf, type: 3}
+  m_Name: Age
+  m_EditorClassIdentifier: 
+  <Name>k__BackingField: Age
+  <Traits>k__BackingField:
+  - {fileID: 11400000, guid: 5d0f66df0d9b48241aef22cfe2bca039, type: 2}
+  - {fileID: 11400000, guid: 76e3cc9fca0d0f54784cac5c9c30d841, type: 2}
+  - {fileID: 11400000, guid: baaa68bf8e748c04e825bb9af8101dba, type: 2}
+  - {fileID: 11400000, guid: a5892e9f5f62b584dbd25f0bb736a886, type: 2}
+  - {fileID: 11400000, guid: 459f659a43dedab46b61c26144ca7932, type: 2}
