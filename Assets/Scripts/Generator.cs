@@ -20,6 +20,7 @@ public class Generator : MonoBehaviour
     [SerializeField] TMP_InputField _seedInput;
     [SerializeField] NameGenerator _nameGenerator;
     [SerializeField] IconGenerator _iconGenerator;
+    [SerializeField] ResumeGenerator _resumeGenerator;
 
     public void Generate()
     {
@@ -42,7 +43,6 @@ public class Generator : MonoBehaviour
             
             var categoriesClone = new List<Categorie>(_categories);
             var traits = new List<Trait>();
-            var sentences = new List<Sentence>();
 
             for (var j = 0; j < TRAIT_COUNT; j++)
             {
@@ -51,11 +51,8 @@ public class Generator : MonoBehaviour
             
                 var cat = categoriesClone.GetRandom();
                 categoriesClone.Remove(cat);
-                var trait = cat.Traits.GetRandom();
-                traits.Add(trait);
-
-                var sentence = cat.Sentences.GetRandom();
-                sentences.Add(sentence);
+                
+                traits.Add(cat.Traits.GetRandom());
             }
 
             character.Sexe = Random.Range(0, 2);
@@ -68,7 +65,7 @@ public class Generator : MonoBehaviour
 
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
-            character.Sentences = sentences;
+            character.Resume = _resumeGenerator.Generate(character);
             character.UpdateCharacter(); 
         }
 
