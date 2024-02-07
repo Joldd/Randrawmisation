@@ -55,6 +55,7 @@ public class Generator : MonoBehaviour
                 categoriesClone.Remove(cat);
 
                 var trait = cat.Traits.GetRandom();
+ 
                 traits.Add(trait);
                 _iconGenerator.setTraitIcon(trait, character);
             }
@@ -70,6 +71,12 @@ public class Generator : MonoBehaviour
             if (!character.itemSet) character.IconItem = _iconGenerator.GenerateIcon(_iconGenerator._itemIcons);
 
             character.Age = Random.Range(17, 75);
+            
+            if(character.Sexe == 1)
+            {
+                character.IconBeard = null;
+            }
+
             character.Traits = traits;
             _characters.Add(character);
         }
