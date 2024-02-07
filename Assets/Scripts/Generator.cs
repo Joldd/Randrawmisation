@@ -53,17 +53,21 @@ public class Generator : MonoBehaviour
             
                 var cat = categoriesClone.GetRandom();
                 categoriesClone.Remove(cat);
-                
-                traits.Add(cat.Traits.GetRandom());
+
+                var trait = cat.Traits.GetRandom();
+                traits.Add(trait);
+                _iconGenerator.setTraitIcon(trait, character);
             }
 
             character.Sexe = Random.Range(0, 2);
             character.Name = _nameGenerator.Generate(character.Sexe);
 
-            character.IconFace = _iconGenerator.GenerateIcon(_iconGenerator._faceIcons);
-            character.IconClothes = _iconGenerator.GenerateIcon(_iconGenerator._clothesIcons);
-            character.IconHat = _iconGenerator.GenerateIcon(_iconGenerator._hatIcons);
-            character.IconBeard = _iconGenerator.GenerateIcon(_iconGenerator._beardIcons);
+            if (!character.faceSet) character.IconFace = _iconGenerator.GenerateIcon(_iconGenerator._faceIcons);
+            if (!character.clothesSet) character.IconClothes = _iconGenerator.GenerateIcon(_iconGenerator._clothesIcons);
+            if (!character.hatSet) character.IconHat = _iconGenerator.GenerateIcon(_iconGenerator._hatIcons);
+            if (!character.beardSet) character.IconBeard = _iconGenerator.GenerateIcon(_iconGenerator._beardIcons);
+            if (!character.happySet) character.IconHappy = _iconGenerator.GenerateIcon(_iconGenerator._happyIcons);
+            if (!character.itemSet) character.IconItem = _iconGenerator.GenerateIcon(_iconGenerator._itemIcons);
 
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
