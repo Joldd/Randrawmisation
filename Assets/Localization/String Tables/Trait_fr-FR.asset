@@ -20,12 +20,132 @@ MonoBehaviour:
     - rid: 6149114602258956317
   m_TableData:
   - m_Id: 6311870464
-    m_Localized: '{sexe:choose(0|1):Professeur|Professeure}'
+    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):professeur|professeure}
+      {age:cond:>60?{sexe:choose(0|1):senior|seniore} |}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 248952356864
-    m_Localized: '{sexe:choose(0|1):Chercheur|Chercheuse}'
+    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):chercheur|chercheuse} {age:cond:>60?{sexe:choose(0|1):senior|seniore}
+      |}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 6957235380224
+    m_Localized: '{age:cond:<30?jeune |}architecte {age:cond:>60?{sexe:choose(0|1):senior|seniore}
+      |}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 7219073196032
+    m_Localized: '{age:cond:<30?jeune |}dentiste {age:cond:>60?{sexe:choose(0|1):senior|seniore}
+      |}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 7300115537920
+    m_Localized: "{age:cond:<30?jeune |}{sexe:choose(0|1):policier|polici\xE8re}
+      {age:cond:>60?{sexe:choose(0|1):senior|seniore} |}"
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8264578965504
+    m_Localized: en forme
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8337845067776
+    m_Localized: '{sexe:choose(0|1):endurant|endurante}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8411811618816
+    m_Localized: faible
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8415485829120
+    m_Localized: '{sexe:choose(0|1):fort|forte}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8417398431744
+    m_Localized: malade
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8612660060160
+    m_Localized: '{sexe:choose(0|1):abruti|abrutie}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8613331148800
+    m_Localized: "{sexe:choose(0|1):un g\xE9nie|une g\xE9nie}"
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8614023208960
+    m_Localized: '{sexe:choose(0|1):intelligent|intelligente}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 8614673326080
+    m_Localized: '{sexe:choose(0|1):moyen|moyenne}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9246977236992
+    m_Localized: simple d'esprit
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9248499769344
+    m_Localized: calme
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9249179246592
+    m_Localized: '{sexe:choose(0|1):manipulateur|manipulatrice}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9249787420672
+    m_Localized: "{sexe:choose(0|1):m\xE9chant|m\xE9chante}"
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9250567561216
+    m_Localized: '{sexe:choose(0|1):grand|grande}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9533603389440
+    m_Localized: '{sexe:choose(0|1):gros|grosse}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9534219952128
+    m_Localized: maigre
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9676109062144
+    m_Localized: '{sexe:choose(0|1):petit|petite}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 9677828726784
+    m_Localized: '{sexe:choose(0|1):trapu|trapue}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 10495848030208
+    m_Localized: dynamique
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 10497689329664
+    m_Localized: '{sexe:choose(0|1):gentil|gentille}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
@@ -35,4 +155,4 @@ MonoBehaviour:
     - rid: 6149114602258956317
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 00803778010000000080b7f639000000
+        m_Entries: 00803778010000000080b7f63900000000208bdb5306000000204bd2900600000020cbb0a306000000204b3f8407000000204b4e9507000000200b87a607000000200b62a707000000200bd4a707000000208b4ad507000000208b72d50700000020cb9bd507000000208bc2d50700000020cbfa6808000000208b556908000000200b7e6908000000204ba2690800000020cbd06908000000200bb7ab0800000020cbdbab08000000200be5cc08000000208b4bcd08000000204bc18b09000000200b2f8c090000

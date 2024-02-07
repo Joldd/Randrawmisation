@@ -23,6 +23,98 @@ MonoBehaviour:
     m_Key: CHERCHEUR
     m_Metadata:
       m_Items: []
+  - m_Id: 6957235380224
+    m_Key: ARCHITECTE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7219073196032
+    m_Key: DENTISTE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7300115537920
+    m_Key: POLICIER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8264578965504
+    m_Key: EN FORME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8337845067776
+    m_Key: ENDURANT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8411811618816
+    m_Key: FAIBLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8415485829120
+    m_Key: FORT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8417398431744
+    m_Key: MALADE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8612660060160
+    m_Key: ABRUTI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8613331148800
+    m_Key: "G\xC9NIE"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8614023208960
+    m_Key: INTELLIGENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8614673326080
+    m_Key: MOYEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9246977236992
+    m_Key: SIMPLE D'ESPRIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9248499769344
+    m_Key: CALME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9249179246592
+    m_Key: MANIPULATEUR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9249787420672
+    m_Key: MECHANT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9250567561216
+    m_Key: GRAND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9533603389440
+    m_Key: GROS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9534219952128
+    m_Key: MAIGRE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9676109062144
+    m_Key: PETIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9677828726784
+    m_Key: TRAPU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10495848030208
+    m_Key: DYNAMIQUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10497689329664
+    m_Key: GENTIL
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

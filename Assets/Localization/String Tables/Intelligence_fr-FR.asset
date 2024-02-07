@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Localized: "\xCAtre {characterTrait} {characterValue:cond:=0?n'as pas \xE9t\xE9
       utile|=1? a \xE9t\xE9 tr\xE8s utile|a fait l'affaire} lors d'un concours de
       maths dans sa jeunesse. Concours que {other.Name} {otherValue:cond:=0?\xE9tait
-      d'ailleurs tr\xE8s loin de remport\xE9 aussi|=1?a d'ailleurs remport\xE9 haut
+      d'ailleurs tr\xE8s loin de r\xE9ussir aussi|=1?a d'ailleurs remport\xE9 haut
       la main[a moyennement r\xE9ussi, terminant une place derri\xE8re {character.Name}}."
     m_Metadata:
       m_Items:
