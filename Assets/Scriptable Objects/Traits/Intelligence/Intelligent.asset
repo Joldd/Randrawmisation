@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Type>k__BackingField: {fileID: 11400000, guid: fa77577f706e8914c87e939d4cc7cd90, type: 2}
   <Name>k__BackingField: Intelligent
-  <Value>k__BackingField: 0.75
+  <Value>k__BackingField: 1
   <Icon>k__BackingField: {fileID: 21300000, guid: 65718a2e5588ebe4d98b7d817d426531, type: 3}

@@ -14,7 +14,8 @@ public class ResumeGenerator : MonoBehaviour
 
         foreach (var trait in character.Traits)
         {
-            strings.Add(GetString(trait, character, others.GetRandom(), (character , trait) =>
+            var other = others.GetRandom();
+            strings.Add(GetString(trait, character, other, (character , trait) =>
             {
                 if (!character.Traits.Contains(trait))
                     return (new LocalizedString(), 0);
@@ -23,7 +24,6 @@ public class ResumeGenerator : MonoBehaviour
                 return (new LocalizedString("Trait", t.Name.ToUpper()) { { "sexe", new IntVariable { Value = character.Sexe } } , { "age", new IntVariable { Value = character.Age } } }, t.Value);
             }));
         }
-        
         return strings;
     }
 
@@ -33,6 +33,27 @@ public class ResumeGenerator : MonoBehaviour
         var otherTrait = getTrait(other, trait);
         charTrait.name.GetLocalizedString();
 
+        bool sameType = false;
+        int comparaison = 0;
+        float oValue = 0;
+        foreach (Trait t in other.Traits)
+        {
+            if (t.Type == trait.Type)
+            {          
+                sameType = true; 
+                oValue = t.Value;
+                if(t.Value > trait.Value)
+                {
+                    comparaison = 2;
+                }
+                else if (t.Value == trait.Value)
+                {
+                    comparaison = 1;
+                }
+                break;
+            }
+        }
+
         return new LocalizedString(trait.Type.name, $"{trait.Type.name.ToUpper()}_0")
         {
             { "character", new ObjectVariable { Value = character } },
@@ -40,6 +61,10 @@ public class ResumeGenerator : MonoBehaviour
             { "characterTrait", charTrait.name },
             { "otherTrait", otherTrait.name },
             { "characterValue", new FloatVariable { Value = charTrait.value } },
+            { "traitType", new StringVariable { Value = trait.Type.name } },
+            { "sameType", new BoolVariable { Value = sameType } },
+            { "comparaison", new IntVariable { Value = comparaison } },
+            { "oValue", new FloatVariable { Value = oValue } },
             { "otherValue", new FloatVariable { Value = otherTrait.value } },
             { "randomValue", new IntVariable { Value = Random.Range(0, 3) } },
         };

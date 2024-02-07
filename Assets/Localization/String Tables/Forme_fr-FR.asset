@@ -21,8 +21,8 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 7737933824
     m_Localized: "{character.Name} est tellement {characterTrait} qu'{character.Sexe:choose(0|1):il|elle}
-      a {characterValue:cond:=1?explos\xE9|=0?implos\xE9 face \xE0|bien combattu
-      face \xE0}  {other.Name} lors d'un combat de boxe amical."
+      {sameType:{comparaison:cond:=1?s'est bien battu avec|=2? s'est fait d\xE9truire
+      par}| a explos\xE9} {other.Name} lors d'un combat de boxe amical."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956315
