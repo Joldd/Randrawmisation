@@ -1224,6 +1224,8 @@ MonoBehaviour:
   _faceIcons:
   - {fileID: 21300000, guid: aae4f9acb1ec2324f9e53aff8d2e8b3c, type: 3}
   - {fileID: 21300000, guid: 8dc777214a9146148a188f71b140c30a, type: 3}
+  - {fileID: 21300000, guid: 5b2896e4e50b4244486223c2ce6f81e9, type: 3}
+  - {fileID: 21300000, guid: a83a4ac62e9b5144ab2fc6388afefa51, type: 3}
   _hatIcons:
   - {fileID: 21300000, guid: 297baef3ec873124a9ad119e525b178e, type: 3}
   - {fileID: 21300000, guid: 0609628921701964e87e1d977979829d, type: 3}
@@ -1234,6 +1236,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8c45705cb73d124418c7690fd5f4517e, type: 3}
   - {fileID: 21300000, guid: 6763cf39f35198248b011bd9236336c1, type: 3}
   - {fileID: 21300000, guid: c4e8aa8aef10c00458587c481c99dd99, type: 3}
+  - {fileID: 21300000, guid: 8b107d4107e7cdf45a67471a539f0264, type: 3}
   _beardIcons:
   - {fileID: 21300000, guid: 9fdedb48659c34e4793617b012db15bc, type: 3}
   - {fileID: 21300000, guid: 4e483665f078bf24e84e7b2fb2e28c91, type: 3}
