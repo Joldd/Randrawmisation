@@ -1226,6 +1226,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8dc777214a9146148a188f71b140c30a, type: 3}
   - {fileID: 21300000, guid: 5b2896e4e50b4244486223c2ce6f81e9, type: 3}
   - {fileID: 21300000, guid: a83a4ac62e9b5144ab2fc6388afefa51, type: 3}
+  - {fileID: 21300000, guid: 3ba987993b695a64fa51a0a06544df0c, type: 3}
+  - {fileID: 21300000, guid: b0e9773c5f0723c4e8e301d428482b5b, type: 3}
+  - {fileID: 21300000, guid: 2acb211b30b9ee943b1534a0a7a367c6, type: 3}
+  - {fileID: 21300000, guid: 2406f2a4635f76a46affbb6cdda94cdb, type: 3}
   _hatIcons:
   - {fileID: 21300000, guid: 297baef3ec873124a9ad119e525b178e, type: 3}
   - {fileID: 21300000, guid: 0609628921701964e87e1d977979829d, type: 3}
@@ -1241,6 +1245,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9fdedb48659c34e4793617b012db15bc, type: 3}
   - {fileID: 21300000, guid: 4e483665f078bf24e84e7b2fb2e28c91, type: 3}
   - {fileID: 21300000, guid: b1116fdf98e03dc49a066e700c9f5b35, type: 3}
+  - {fileID: 0}
+  _happyIcons:
+  - {fileID: 21300000, guid: 1105959dde0f19643841cf07cabbf989, type: 3}
+  - {fileID: 21300000, guid: fffdd3c8fea1f174bb0bb34c85695d4b, type: 3}
+  - {fileID: 0}
+  _itemIcons:
+  - {fileID: 21300000, guid: 65718a2e5588ebe4d98b7d817d426531, type: 3}
   - {fileID: 0}
 --- !u!114 &4351883076804294654
 MonoBehaviour:
