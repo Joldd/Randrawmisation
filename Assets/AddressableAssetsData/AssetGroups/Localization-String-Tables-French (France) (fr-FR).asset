@@ -23,6 +23,36 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-fr-FR
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40d9b0b4bba9ee546ba73ecaa3529364
+    m_Address: Forme_fr-FR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr-FR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ec7d1c9a38cb4446a33a700e8e2d603
+    m_Address: Personnalite_fr-FR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr-FR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 814d38a79a48de448919f45d26ea1e2b
+    m_Address: Intelligence_fr-FR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr-FR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df3aa879e5c1733459a289b763a674b9
+    m_Address: Metier_fr-FR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr-FR
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ac53fd0b7a002ea439b75bcfbebef0ce
+    m_Address: Physique_fr-FR
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-fr-FR
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c79c8981d60b6c44c93b6696dc86a1a2, type: 2}
   m_SchemaSet:

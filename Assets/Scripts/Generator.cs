@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +9,6 @@ using Random = UnityEngine.Random;
 public class Generator : MonoBehaviour
 {
     const int TRAIT_COUNT = 3;
-
     const int PNJ_COUNT = 6;
 
     [SerializeField] List<Categorie> _categories;
@@ -21,6 +21,8 @@ public class Generator : MonoBehaviour
     [SerializeField] NameGenerator _nameGenerator;
     [SerializeField] IconGenerator _iconGenerator;
     [SerializeField] ResumeGenerator _resumeGenerator;
+
+    List<Character> _characters = new List<Character>();
 
     public void Generate()
     {
@@ -65,7 +67,12 @@ public class Generator : MonoBehaviour
 
             character.Age = Random.Range(17, 75);
             character.Traits = traits;
-            character.Resume = _resumeGenerator.Generate(character);
+            _characters.Add(character);
+        }
+
+        foreach (var character in _characters)
+        {
+            character.Resume = _resumeGenerator.Generate(character, _characters.Except(_characters.Where(c => c == character)).ToList());
             character.UpdateCharacter(); 
         }
 
@@ -74,6 +81,7 @@ public class Generator : MonoBehaviour
 
     void Clear()
     {
+        _characters.Clear();
         foreach (Transform child in _cardContainer)
             Destroy(child.gameObject);
     }

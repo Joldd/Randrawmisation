@@ -22,6 +22,31 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: daf0da9eea6c0b14fba12d42b3c276ee
+    m_Address: Assets/Localization/String Tables/Forme Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd2c59483b9db99409f7ac9f152955ae
+    m_Address: Assets/Localization/String Tables/Personnalite Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 26ede485be9da7a438fa8afe7f78cb33
+    m_Address: Assets/Localization/String Tables/Intelligence Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c07470d3da6bec4f8b77117e94236f4
+    m_Address: Assets/Localization/String Tables/Metier Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 87a8f19153509f14f9c5c693c4ca7ba1
+    m_Address: Assets/Localization/String Tables/Physique Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c79c8981d60b6c44c93b6696dc86a1a2, type: 2}
   m_SchemaSet:

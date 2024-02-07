@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Intelligence_fr-FR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr-FR
+  m_SharedData: {fileID: 11400000, guid: 26ede485be9da7a438fa8afe7f78cb33, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 6149114602258956314
+  m_TableData:
+  - m_Id: 4273438720
+    m_Localized: "\xCAtre {characterTrait} {characterValue:cond:=0?n'as pas \xE9t\xE9
+      utile|=1? a \xE9t\xE9 tr\xE8s utile|a fait l'affaire} lors d'un concours de
+      maths dans sa jeunesse. Concours que {other.Name} {otherValue:cond:=0?\xE9tait
+      d'ailleurs tr\xE8s loin de remport\xE9 aussi|=1?a d'ailleurs remport\xE9 haut
+      la main[a moyennement r\xE9ussi, terminant une place derri\xE8re {character.Name}}."
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956314
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149114602258956314
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0080b7fe00000000

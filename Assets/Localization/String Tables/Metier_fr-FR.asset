@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Metier_fr-FR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr-FR
+  m_SharedData: {fileID: 11400000, guid: 5c07470d3da6bec4f8b77117e94236f4, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 6149114602258956313
+  m_TableData:
+  - m_Id: 5456232448
+    m_Localized: "{character.Name} {randomValue:cond:=2?adore son m\xE9tier de {characterTrait}|=1?aime
+      son m\xE9tier de {characterTrait}|est {characterTrait}}. Un m\xE9tier qu'{character.Sexe:choose(0|1):il|elle}
+      a {randomValue:cond:=0?pourtant |}voulu faire d\xE8s son plus jeune \xE2ge."
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956313
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149114602258956313
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0080374501000000
