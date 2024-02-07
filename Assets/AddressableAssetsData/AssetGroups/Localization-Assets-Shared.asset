@@ -47,6 +47,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f676068e03250f4b9ea1cef24f1e6d6
+    m_Address: Assets/Localization/String Tables/Trait Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c79c8981d60b6c44c93b6696dc86a1a2, type: 2}
   m_SchemaSet:

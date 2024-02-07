@@ -20,7 +20,7 @@ public class ResumeGenerator : MonoBehaviour
                     return (new LocalizedString(), 0);
 
                 var t = character.Traits.First(t => t == trait);
-                return (new LocalizedString(t.name, "NAME") { { "sexe", new BoolVariable { Value = character.Sexe == 0 } } }, t.Value);
+                return (new LocalizedString("Trait", t.Name.ToUpper()) { { "sexe", new IntVariable { Value = character.Sexe } } }, t.Value);
             }));
         }
         
@@ -31,13 +31,13 @@ public class ResumeGenerator : MonoBehaviour
     {
         var charTrait = getTrait(character, trait);
         var otherTrait = getTrait(other, trait);
-        
+
         return new LocalizedString(trait.Type.name, $"{trait.Type.name.ToUpper()}_0")
         {
             { "character", new ObjectVariable { Value = character } },
             { "other", new ObjectVariable { Value = other } },
-            { "characterTrait", charTrait.name },
-            { "otherTrait", otherTrait.name },
+            { "characterTrait", new StringVariable { Value = charTrait.name.GetLocalizedString() } },
+            { "otherTrait", new StringVariable { Value = otherTrait.name.GetLocalizedString() } },
             { "characterValue", new FloatVariable { Value = charTrait.value } },
             { "otherValue", new FloatVariable { Value = otherTrait.value } },
             { "randomValue", new IntVariable { Value = Random.Range(0, 3) } },

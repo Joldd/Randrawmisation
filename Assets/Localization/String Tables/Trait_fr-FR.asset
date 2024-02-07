@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Trait_fr-FR
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr-FR
+  m_SharedData: {fileID: 11400000, guid: 6f676068e03250f4b9ea1cef24f1e6d6, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 6149114602258956317
+  m_TableData:
+  - m_Id: 6311870464
+    m_Localized: '{sexe:choose(0|1):Professeur|Professeure}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  - m_Id: 248952356864
+    m_Localized: '{sexe:choose(0|1):Chercheur|Chercheuse}'
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956317
+  references:
+    version: 2
+    RefIds:
+    - rid: 6149114602258956317
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00803778010000000080b7f639000000
