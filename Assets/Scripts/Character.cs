@@ -18,21 +18,83 @@ public class Character : MonoBehaviour
     [SerializeField] TextMeshProUGUI _traitsText;
     [SerializeField] TextMeshProUGUI _resumeText;
     
+    Sprite _iconFace;
+    Sprite _iconHat;
+    Sprite _iconClothes;
+    Sprite _iconBeard;
+    Sprite _iconHappy;
+    Sprite _iconItem;
+    
     public string Name { get; set; }
     public int Age { get; set; }
     public int Sexe { get; set; } // 0 = Homme, 1 = Femme
-    public Sprite IconFace { get; set; }
-    public bool faceSet = false;
-    public Sprite IconHat { get; set; }
-    public bool hatSet = false;
-    public Sprite IconClothes { get; set; }
-    public bool clothesSet = false;
-    public Sprite IconBeard { get; set; }
-    public bool beardSet = false;
-    public Sprite IconHappy { get; set; }
-    public bool happySet = false;
-    public Sprite IconItem { get; set; }
-    public bool itemSet = false;
+
+    public bool faceSet;
+    public bool hatSet;
+    public bool clothesSet;
+    public bool beardSet;
+    public bool happySet;
+    public bool itemSet;
+
+    public Sprite IconFace
+    {
+        get => _iconFace;
+        set
+        {
+            _iconFace = value;
+            UpdateImage(_faceImage, IconFace);
+        }
+    }
+
+    public Sprite IconHat
+    {
+        get => _iconHat;
+        set
+        {
+            _iconHat = value;
+            UpdateImage(_hatImage, IconHat);
+        }
+    }
+
+    public Sprite IconClothes
+    {
+        get => _iconClothes;
+        set
+        {
+            _iconClothes = value;
+            UpdateImage(_clothesImage, IconClothes);
+        }
+    }
+
+    public Sprite IconBeard
+    {
+        get => _iconBeard;
+        set
+        {
+            _iconBeard = value;
+            UpdateImage(_beardImage, IconBeard);
+        }
+    }
+
+    public Sprite IconHappy
+    {
+        get => _iconHappy;
+        set
+        {
+            _iconHappy = value;
+            UpdateImage(_happyImage, IconHappy);
+        }
+    }
+
+    public Sprite IconItem
+    {
+        get => _iconItem;
+        set
+        {
+            _iconItem = value;
+            UpdateImage(_itemImage, IconItem);
+        }
+    }
 
     public List<Trait> Traits { get; set; }
     public List<LocalizedString> Resume { get; set; }
@@ -40,19 +102,16 @@ public class Character : MonoBehaviour
     public void UpdateCharacter()
     {
         _nameText.text = $"{Name} ({Age})";
-
-        UpdateImage(_faceImage, IconFace);
-        UpdateImage(_clothesImage, IconClothes);
-        UpdateImage(_hatImage, IconHat);
-        UpdateImage(_beardImage, IconBeard);
-        UpdateImage(_happyImage, IconHappy);
-        UpdateImage(_itemImage, IconItem);
-
-        _traitsText.text = string.Join(" - ", Traits.Select(trait => trait.Name));
+        UpdateTraits();
         _resumeText.text = string.Join("\n\n", Resume.Select(strings => strings.GetLocalizedString()));
     }
 
-    void UpdateImage(Image img, Sprite icon)
+    public void UpdateTraits()
+    {
+        _traitsText.text = string.Join(" - ", Traits.Select(trait => trait.Name));
+    }
+
+    public void UpdateImage(Image img, Sprite icon)
     {
         img.sprite = icon;
         if (img.sprite == null)
