@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour 
 {
+    public GameObject totalImage;
+
     [SerializeField] Image _faceImage;
     [SerializeField] Image _hatImage;
     [SerializeField] Image _clothesImage;

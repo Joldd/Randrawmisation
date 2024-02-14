@@ -55,9 +55,32 @@ public class Generator : MonoBehaviour
                 categoriesClone.Remove(cat);
 
                 var trait = cat.Traits.GetRandom();
- 
                 traits.Add(trait);
                 _iconGenerator.setTraitIcon(trait, character);
+
+                if (trait.Type.name == "Physique")
+                {
+                    switch (trait.Name)
+                    {
+                        case "Gros":
+                            character.totalImage.transform.localScale = new Vector3(1.2f,1,1);
+                            break;
+                        case "Maigre":
+                            character.totalImage.transform.localScale = new Vector3(0.8f, 1, 1);
+                            break;
+                        case "Grand":
+                            character.totalImage.transform.localScale = new Vector3(1, 1.2f, 1);
+                            break;
+                        case "Petit":
+                            character.totalImage.transform.localScale = new Vector3(1, 0.8f, 1);
+                            break;
+                        case "Trapu":
+                            character.totalImage.transform.localScale = new Vector3(1.2f, 0.8f, 1);
+                            break;
+                        default:
+                            break;
+                    }
+                }
             }
 
             character.Sexe = Random.Range(0, 2);

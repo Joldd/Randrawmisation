@@ -1324,6 +1324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d54c8d5667848dcaa152f0bd4f0abae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalImage: {fileID: 7752166233024202424}
   _faceImage: {fileID: 2467391022575925117}
   _hatImage: {fileID: 8848574824669131292}
   _clothesImage: {fileID: 1646020274376338212}
