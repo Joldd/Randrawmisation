@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour 
 {
+    public GameObject totalImage;
+
     [SerializeField] Image _faceImage;
     [SerializeField] Image _hatImage;
     [SerializeField] Image _clothesImage;
@@ -101,14 +103,14 @@ public class Character : MonoBehaviour
 
     public void UpdateCharacter()
     {
-        _nameText.text = $"{Name} ({Age})";
+        _nameText.text = $"{Name} ({Age} ans)";
         UpdateTraits();
-        _resumeText.text = string.Join("\n\n", Resume.Select(strings => strings.GetLocalizedString()));
+        _resumeText.text = string.Join("\n", Resume.Select(strings => strings.GetLocalizedString()));
     }
 
     public void UpdateTraits()
     {
-        _traitsText.text = string.Join(" - ", Traits.Select(trait => trait.Name));
+        _traitsText.text = string.Join("\n", Traits.Select(trait => trait.Name));
     }
 
     public void UpdateImage(Image img, Sprite icon)

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [CreateAssetMenu]
@@ -8,6 +9,7 @@ public class Trait : ScriptableObject
     [field: SerializeField] public float Value { get; private set; }
 
     [field: SerializeField] public Sprite Icon { get; set; }
+    [field: SerializeField] public String IconType { get; set; }
 
     public override string ToString()
     {

@@ -17,32 +17,32 @@ public class IconGenerator : MonoBehaviour
 
     public void setTraitIcon(Trait trait, Character character)
     {
-        if (_faceIcons.Contains(trait.Icon))
+        if (trait.IconType == "Face")
         {
             character.IconFace = trait.Icon;
             character.faceSet = true;
         }
-        else if (_hatIcons.Contains(trait.Icon))
+        else if (trait.IconType == "Hat")
         {
             character.IconHat = trait.Icon;
             character.hatSet = true;
         }
-        else if(_clothesIcons.Contains(trait.Icon))
+        else if(trait.IconType == "Clothes")
         {
             character.IconClothes = trait.Icon;
             character.clothesSet = true;
         }
-        else if(_beardIcons.Contains(trait.Icon))
+        else if(trait.IconType == "Beard")
         {
             character.IconBeard = trait.Icon;
             character.beardSet = true;
         }
-        else if (_happyIcons.Contains(trait.Icon))
+        else if (trait.IconType == "Happy")
         {
             character.IconHappy = trait.Icon;
             character.happySet = true;
         }
-        else if (_itemIcons.Contains(trait.Icon))
+        else if (trait.IconType == "Item")
         {
             character.IconItem = trait.Icon;
             character.itemSet = true;
