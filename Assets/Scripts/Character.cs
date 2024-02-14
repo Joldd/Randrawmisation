@@ -39,7 +39,7 @@ public class Character : MonoBehaviour
 
     public void UpdateCharacter()
     {
-        _nameText.text = $"{Name} ({Age})";
+        _nameText.text = $"{Name} ({Age} ans)";
 
         UpdateImage(_faceImage, IconFace);
         UpdateImage(_clothesImage, IconClothes);
@@ -48,8 +48,8 @@ public class Character : MonoBehaviour
         UpdateImage(_happyImage, IconHappy);
         UpdateImage(_itemImage, IconItem);
 
-        _traitsText.text = string.Join(" - ", Traits.Select(trait => trait.Name));
-        _resumeText.text = string.Join("\n\n", Resume.Select(strings => strings.GetLocalizedString()));
+        _traitsText.text = string.Join(" \n ", Traits.Select(trait => trait.Name));
+        _resumeText.text = string.Join("\n", Resume.Select(strings => strings.GetLocalizedString()));
     }
 
     void UpdateImage(Image img, Sprite icon)
