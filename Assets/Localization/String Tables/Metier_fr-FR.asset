@@ -29,7 +29,7 @@ MonoBehaviour:
   - m_Id: 2497706027216896
     m_Localized: "{character.Name} n'aime pas beaucoup son metier de {characterTrait}.
       {character.Sexe:choose(0|1):Il|Elle} aurait pr\xE9f\xE9r\xE9 \xEAtre {sameType:{oName}|charcutier}
-      comme {other.Name}"
+      comme {other.Name}."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956313

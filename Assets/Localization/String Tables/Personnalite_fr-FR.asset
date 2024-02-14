@@ -28,7 +28,7 @@ MonoBehaviour:
       - rid: 6149114602258956312
   - m_Id: 2501993780310016
     m_Localized: "{character.Name} est {sameType:{comparaison:cond:=2?moins|=1?autant|plus}|autant}
-      appr\xE9ci\xE9 que {other.Name} qui {sameType:est {oName}| lui ressemble}"
+      appr\xE9ci\xE9 que {other.Name} qui {sameType:est {oName}|lui ressemble}."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956312

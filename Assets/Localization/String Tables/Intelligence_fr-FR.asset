@@ -21,16 +21,16 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 4273438720
     m_Localized: "\xCAtre {characterTrait} {characterValue:cond:=0?a \xE9t\xE9 catastrophique|=1?a
-      fait l'affaire|=2?a \xE9t\xE9 tr\xE8s utile|n'a pas \xE9t\xE9 tr\xE8s utile
-      } lors d'un concours de maths dans sa jeunesse. Concours que {other.Name} {sameType:{oValue:cond:=1?a
+      fait l'affaire|=2?a \xE9t\xE9 tr\xE8s utile|n'a pas \xE9t\xE9 tr\xE8s utile}
+      lors d'un concours de maths dans sa jeunesse. Concours que {other.Name} {sameType:{oValue:cond:=1?a
       assez bien g\xE9r\xE9|=2?a parfaitement r\xE9ussi| n'a pas du tout r\xE9ussi}|
-      n'a pas du tout r\xE9ussi}"
+      n'a pas du tout r\xE9ussi}."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956314
   - m_Id: 2494511578181632
     m_Localized: Tout le monde dit que {character.Name} est {characterTrait} ce qui
-      {character.Sexe:choose(0|1):le|la} rend {characterValue:cond:<1?triste|fier}{character.Sexe:choose(0|1):|e}
+      {character.Sexe:choose(0|1):le|la} rend {characterValue:cond:<1?triste|fier}{character.Sexe:choose(0|1):|e}.
     m_Metadata:
       m_Items:
       - rid: 6149114602258956314

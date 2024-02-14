@@ -21,15 +21,15 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 7737933824
     m_Localized: "{character.Name} est tellement {characterTrait} qu'{character.Sexe:choose(0|1):il|elle}
-      {sameType:{comparaison:cond:=1?s'est bien battu avec|=2? s'est fait d\xE9truire
-      par|a explos\xE9}| a explos\xE9} {other.Name} lors d'un combat de boxe amical."
+      {sameType:{comparaison:cond:=1?s'est bien battu avec|=2?s'est fait d\xE9truire
+      par|a explos\xE9}|a explos\xE9} {other.Name} lors d'un combat de boxe amical."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956315
   - m_Id: 2489892110168064
     m_Localized: '{character.Name} {characterValue:cond:<1?est beaucoup trop {characterTrait}
       pour|est tellement {characterTrait} qu''{character.Sexe:choose(0|1):il|elle}
-      peut} courrir un marathon.'
+      peut} courir un marathon.'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956315

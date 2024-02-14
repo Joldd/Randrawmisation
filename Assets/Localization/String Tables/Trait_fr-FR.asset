@@ -20,13 +20,13 @@ MonoBehaviour:
     - rid: 6149114602258956317
   m_TableData:
   - m_Id: 6311870464
-    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):professeur|professeure}
-      {age:cond:>60? senior|}'
+    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):professeur|professeure}{age:cond:>60?
+      senior|}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 248952356864
-    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):chercheur|chercheuse} {age:cond:>60?
+    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):chercheur|chercheuse}{age:cond:>60?
       senior|}'
     m_Metadata:
       m_Items:
