@@ -25,10 +25,13 @@ public class Generator : MonoBehaviour
 
     List<Character> _characters = new List<Character>();
 
+    [SerializeField] GameObject title;
+
     public void Generate()
     {
         var seed = Generate(!string.IsNullOrWhiteSpace(_seedInput.text) ? int.Parse(_seedInput.text) : -1);
         _seedText.text = $"Seed : {seed}";
+        title.SetActive(false);
     }
     
     public int Generate(int seed)
@@ -64,7 +67,7 @@ public class Generator : MonoBehaviour
                     switch (trait.Name)
                     {
                         case "Gros":
-                            character.totalImage.transform.localScale = new Vector3(1.2f,1,1);
+                            character.totalImage.transform.localScale = new Vector3(1.3f,1,1);
                             break;
                         case "Maigre":
                             character.totalImage.transform.localScale = new Vector3(0.8f, 1, 1);
@@ -73,7 +76,7 @@ public class Generator : MonoBehaviour
                             character.totalImage.transform.localScale = new Vector3(1, 1.2f, 1);
                             break;
                         case "Petit":
-                            character.totalImage.transform.localScale = new Vector3(1, 0.8f, 1);
+                            character.totalImage.transform.localScale = new Vector3(1, 0.7f, 1);
                             break;
                         case "Trapu":
                             character.totalImage.transform.localScale = new Vector3(1.2f, 0.8f, 1);
