@@ -21,31 +21,29 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 6311870464
     m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):professeur|professeure}
-      {age:cond:>60?{sexe:choose(0|1):senior|seniore} |}'
+      {age:cond:>60? senior|}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 248952356864
-    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):chercheur|chercheuse} {age:cond:>60?{sexe:choose(0|1):senior|seniore}
-      |}'
+    m_Localized: '{age:cond:<30?jeune |}{sexe:choose(0|1):chercheur|chercheuse} {age:cond:>60?
+      senior|}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 6957235380224
-    m_Localized: '{age:cond:<30?jeune |}architecte {age:cond:>60?{sexe:choose(0|1):senior|seniore}
-      |}'
+    m_Localized: '{age:cond:<30?jeune |}architecte{age:cond:>60? senior|}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 7219073196032
-    m_Localized: '{age:cond:<30?jeune |}dentiste {age:cond:>60?{sexe:choose(0|1):senior|seniore}
-      |}'
+    m_Localized: '{age:cond:<30?jeune |}dentiste{age:cond:>60? senior|}'
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
   - m_Id: 7300115537920
-    m_Localized: "{age:cond:<30?jeune |}{sexe:choose(0|1):policier|polici\xE8re}
-      {age:cond:>60?{sexe:choose(0|1):senior|seniore} |}"
+    m_Localized: "{age:cond:<30?jeune |}{sexe:choose(0|1):policier|polici\xE8re}{age:cond:>60?
+      senior|}"
     m_Metadata:
       m_Items:
       - rid: 6149114602258956317
