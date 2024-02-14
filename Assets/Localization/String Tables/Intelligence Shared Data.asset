@@ -16,6 +16,10 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 26ede485be9da7a438fa8afe7f78cb33
   m_Entries:
   - m_Id: 4273438720
+    m_Key: INTELLIGENCE_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2494511578181632
     m_Key: INTELLIGENCE_0
     m_Metadata:
       m_Items: []

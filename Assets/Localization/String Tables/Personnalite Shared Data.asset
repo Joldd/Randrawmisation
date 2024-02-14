@@ -16,6 +16,10 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: cd2c59483b9db99409f7ac9f152955ae
   m_Entries:
   - m_Id: 8232861696
+    m_Key: PERSONNALITE_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2501993780310016
     m_Key: PERSONNALITE_0
     m_Metadata:
       m_Items: []

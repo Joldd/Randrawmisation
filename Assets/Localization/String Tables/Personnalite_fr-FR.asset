@@ -20,9 +20,15 @@ MonoBehaviour:
     - rid: 6149114602258956312
   m_TableData:
   - m_Id: 8232861696
-    m_Localized: "{character.Sexe:choose(0|1):Il|Elle} est {characterValue:cond:=0?peu
+    m_Localized: "{character.Sexe:choose(0|1):Il|Elle} est {characterValue:cond:<1?peu
       |}{character.Sexe:choose(0|1):appr\xE9ci\xE9|appr\xE9ci\xE9e} car {character.Sexe:choose(0|1):il|elle}
       est plut\xF4t {characterTrait}."
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956312
+  - m_Id: 2501993780310016
+    m_Localized: "{character.Name} est {sameType:{comparaison:cond:=2?moins|=1?autant|plus}|autant}
+      appr\xE9ci\xE9 que {other.Name} qui {sameType:est {oName}| lui ressemble}"
     m_Metadata:
       m_Items:
       - rid: 6149114602258956312
@@ -32,4 +38,4 @@ MonoBehaviour:
     - rid: 6149114602258956312
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 0080b7ea01000000
+        m_Entries: 0080b7ea01000000007081d28ce30800

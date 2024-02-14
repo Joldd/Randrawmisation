@@ -16,6 +16,10 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 87a8f19153509f14f9c5c693c4ca7ba1
   m_Entries:
   - m_Id: 6097960960
+    m_Key: PHYSIQUE_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2504462690250752
     m_Key: PHYSIQUE_0
     m_Metadata:
       m_Items: []

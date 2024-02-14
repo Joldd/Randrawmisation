@@ -16,6 +16,10 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 5c07470d3da6bec4f8b77117e94236f4
   m_Entries:
   - m_Id: 5456232448
+    m_Key: METIER_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2497706027216896
     m_Key: METIER_0
     m_Metadata:
       m_Items: []

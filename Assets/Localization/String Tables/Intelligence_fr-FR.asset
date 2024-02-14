@@ -28,10 +28,16 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6149114602258956314
+  - m_Id: 2494511578181632
+    m_Localized: Tout le monde dit que {character.Name} est {characterTrait} ce qui
+      {character.Sexe:choose(0|1):le|la} rend {characterValue:cond:<1?triste|fier}{character.Sexe:choose(0|1):|e}
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956314
   references:
     version: 2
     RefIds:
     - rid: 6149114602258956314
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 0080b7fe00000000
+        m_Entries: 0080b7fe00000000007081bcbedc0800

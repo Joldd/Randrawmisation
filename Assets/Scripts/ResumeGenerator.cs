@@ -36,12 +36,14 @@ public class ResumeGenerator : MonoBehaviour
         bool sameType = false;
         int comparaison = 0;
         float oValue = 0;
+        string oName = "";
         foreach (Trait t in other.Traits)
         {
             if (t.Type == trait.Type)
             {          
                 sameType = true; 
                 oValue = t.Value;
+                oName = t.Name;
                 if(t.Value > trait.Value)
                 {
                     comparaison = 2;
@@ -53,8 +55,9 @@ public class ResumeGenerator : MonoBehaviour
                 break;
             }
         }
-
-        return new LocalizedString(trait.Type.name, $"{trait.Type.name.ToUpper()}_0")
+        int r = Random.Range(0, 2);
+        LocalizedString bla;
+        bla = new LocalizedString(trait.Type.name, $"{trait.Type.name.ToUpper()}_"+r)
         {
             { "character", new ObjectVariable { Value = character } },
             { "other", new ObjectVariable { Value = other } },
@@ -65,8 +68,10 @@ public class ResumeGenerator : MonoBehaviour
             { "sameType", new BoolVariable { Value = sameType } },
             { "comparaison", new IntVariable { Value = comparaison } },
             { "oValue", new FloatVariable { Value = oValue } },
+            { "oName", new StringVariable { Value = oName } },
             { "otherValue", new FloatVariable { Value = otherTrait.value } },
             { "randomValue", new IntVariable { Value = Random.Range(0, 3) } },
         };
+        return bla;
     }
 }

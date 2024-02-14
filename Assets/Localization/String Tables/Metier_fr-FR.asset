@@ -26,10 +26,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items:
       - rid: 6149114602258956313
+  - m_Id: 2497706027216896
+    m_Localized: "{character.Name} n'aime pas beaucoup son metier de {characterTrait}.
+      {character.Sexe:choose(0|1):Il|Elle} aurait pr\xE9f\xE9r\xE9 \xEAtre {sameType:{oName}|charcutier}
+      comme {other.Name}"
+    m_Metadata:
+      m_Items:
+      - rid: 6149114602258956313
   references:
     version: 2
     RefIds:
     - rid: 6149114602258956313
       type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
       data:
-        m_Entries: 0080374501000000
+        m_Entries: 008037450100000000708180a6df0800
