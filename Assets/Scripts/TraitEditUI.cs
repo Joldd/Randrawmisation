@@ -89,6 +89,9 @@ public class TraitEditUI : MonoBehaviour
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown1.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown2.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown3.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown1.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown2.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown3.value], _character);
     }
 
     void ChangeDropdownColor(TMP_Dropdown dropdown, Color color)
