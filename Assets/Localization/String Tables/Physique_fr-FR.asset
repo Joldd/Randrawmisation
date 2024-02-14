@@ -21,8 +21,7 @@ MonoBehaviour:
   m_TableData:
   - m_Id: 6097960960
     m_Localized: "{character.Name} est {characterTrait}, et cela {characterValue:cond:=0?{character.Sexe:choose(0|1):le|la}
-      d\xE9savantage|=2?{character.Sexe:choose(0|1):le|la} ne l'aide pas|l'aide}
-      dans sa vie."
+      d\xE9savantage|=2? ne l'aide pas|l'aide} dans sa vie."
     m_Metadata:
       m_Items:
       - rid: 6149114602258956299

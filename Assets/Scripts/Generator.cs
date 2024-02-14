@@ -25,10 +25,13 @@ public class Generator : MonoBehaviour
 
     List<Character> _characters = new List<Character>();
 
+    [SerializeField] GameObject title;
+
     public void Generate()
     {
         var seed = Generate(!string.IsNullOrWhiteSpace(_seedInput.text) ? int.Parse(_seedInput.text) : -1);
         _seedText.text = $"Seed : {seed}";
+        title.SetActive(false);
     }
     
     public int Generate(int seed)
@@ -59,29 +62,7 @@ public class Generator : MonoBehaviour
                 traits.Add(trait);
                 _iconGenerator.setTraitIcon(trait, character);
 
-                if (trait.Type.name == "Physique")
-                {
-                    switch (trait.Name)
-                    {
-                        case "Gros":
-                            character.totalImage.transform.localScale = new Vector3(1.2f,1,1);
-                            break;
-                        case "Maigre":
-                            character.totalImage.transform.localScale = new Vector3(0.8f, 1, 1);
-                            break;
-                        case "Grand":
-                            character.totalImage.transform.localScale = new Vector3(1, 1.2f, 1);
-                            break;
-                        case "Petit":
-                            character.totalImage.transform.localScale = new Vector3(1, 0.8f, 1);
-                            break;
-                        case "Trapu":
-                            character.totalImage.transform.localScale = new Vector3(1.2f, 0.8f, 1);
-                            break;
-                        default:
-                            break;
-                    }
-                }
+                _iconGenerator.updatePhysique(trait, character);
             }
 
             character.Sexe = Random.Range(0, 2);

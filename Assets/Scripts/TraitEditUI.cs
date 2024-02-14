@@ -91,6 +91,9 @@ public class TraitEditUI : MonoBehaviour
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown1.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown2.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown3.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown1.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown2.value], _character);
+        _iconGenerator.updatePhysique(_traitsIndex[_dropdown3.value], _character);
         var characters = FindObjectsOfType<Character>();
         _character.Resume = _resumeGenerator.Generate(_character, characters.Except(characters.Where(c => c == _character)).ToList());
         _character.UpdateResume();
