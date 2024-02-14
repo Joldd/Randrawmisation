@@ -14,12 +14,14 @@ public class TraitEditUI : MonoBehaviour
     [SerializeField] Button _checkButton;
     
     IconGenerator _iconGenerator;
+    ResumeGenerator _resumeGenerator;
 
     readonly Dictionary<int, Trait> _traitsIndex = new Dictionary<int, Trait>();
 
     void Awake()
     {
         _iconGenerator = FindObjectOfType<IconGenerator>();
+        _resumeGenerator = FindObjectOfType<ResumeGenerator>();
         
         for (var i = 0; i < _traits.Count; i++)
         {
@@ -89,6 +91,9 @@ public class TraitEditUI : MonoBehaviour
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown1.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown2.value], _character);
         _iconGenerator.setTraitIcon(_traitsIndex[_dropdown3.value], _character);
+        var characters = FindObjectsOfType<Character>();
+        _character.Resume = _resumeGenerator.Generate(_character, characters.Except(characters.Where(c => c == _character)).ToList());
+        _character.UpdateResume();
     }
 
     void ChangeDropdownColor(TMP_Dropdown dropdown, Color color)

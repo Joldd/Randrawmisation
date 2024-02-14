@@ -108,7 +108,7 @@ public class Generator : MonoBehaviour
         foreach (var character in _characters)
         {
             character.Resume = _resumeGenerator.Generate(character, _characters.Except(_characters.Where(c => c == character)).ToList());
-            character.UpdateCharacter(); 
+            character.UpdateCharacter();
         }
 
         return seed;

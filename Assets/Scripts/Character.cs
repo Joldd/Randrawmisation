@@ -3,6 +3,8 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
+using UnityEngine.Localization.Components;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.UI;
 
 public class Character : MonoBehaviour 
@@ -19,7 +21,7 @@ public class Character : MonoBehaviour
     [SerializeField] TextMeshProUGUI _nameText;
     [SerializeField] TextMeshProUGUI _traitsText;
     [SerializeField] TextMeshProUGUI _resumeText;
-    
+
     Sprite _iconFace;
     Sprite _iconHat;
     Sprite _iconClothes;
@@ -105,6 +107,11 @@ public class Character : MonoBehaviour
     {
         _nameText.text = $"{Name} ({Age} ans)";
         UpdateTraits();
+        UpdateResume();
+    }
+
+    public void UpdateResume()
+    {
         _resumeText.text = string.Join("\n", Resume.Select(strings => strings.GetLocalizedString()));
     }
 
