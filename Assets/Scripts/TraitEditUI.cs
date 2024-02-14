@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -56,7 +55,7 @@ public class TraitEditUI : MonoBehaviour
         var trait2 = _traitsIndex[_dropdown2.value];
         var trait3 = _traitsIndex[_dropdown3.value];
 
-        _checkButton.interactable = trait1 != trait2 && trait2 != trait3 && trait1.Type != trait2.Type && trait2.Type && trait3.Type;
+        _checkButton.interactable = trait1 != trait2 && trait1 != trait3 && trait2 != trait3 && trait1.Type != trait2.Type && trait1.Type != trait3.Type && trait2.Type && trait3.Type;
 
         if (_checkButton.interactable)
             return;
